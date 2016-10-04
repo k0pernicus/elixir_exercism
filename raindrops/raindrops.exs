@@ -1,16 +1,8 @@
 defmodule Raindrops do
 
-  defp is_pling?(number) do
-    if (rem number, 3) == 0, do: "Pling", else: ""
-  end
-
-  defp is_plang?(number) do
-    if (rem number, 5) == 0, do: "Plang", else: ""
-  end
-
-  defp is_plong?(number) do
-    if (rem number, 7) == 0, do: "Plong", else: "" 
-  end
+  defp is_pling?(number, 3) when rem(number, 3) == 0, do: "Pling"
+  defp is_plang?(number, 5) when rem(number, 5) == 0, do: "Plang"
+  defp is_plong?(number, 7) when rem(number, 7) == 0, do: "Plong"
 
   @doc """
   Returns a string based on raindrop factors.

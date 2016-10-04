@@ -23,10 +23,7 @@ defmodule HelloWorld do
   if no name is given.
   """
   @spec hello(String.t) :: String.t
-  def hello do
-    "Hello, World!"
-  end
-  def hello(name) do
+  def hello(name \\ "World") do
     "Hello, " <> name <> "!"
   end
 end
